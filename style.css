@@ -103,14 +103,17 @@ nav.sticky .nav-links li a:hover {
   cursor: pointer;
   border: 10px;
 }
-
+section.searchHeader {
+  display: flex;
+  justify-content: center;
+}
 .input-box {
   position: relative;
   height: 76px;
   width: 60%;
   margin: 20px 0px 20px 0px;
   border-radius: 8px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 .input-box i,
@@ -228,13 +231,23 @@ text-align:center ;
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px solid rgb(236, 236, 236);
+  padding:11px 2px 2px 2px;
 }
-
+.flex-container {
+  display: GRID;
+  grid-template-columns: auto auto;
+  padding: 0px 10% 0% 10%;
+}
+.flex-container > img {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
 #reviews {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  padding: 20px 15px;
   gap: 50%;
 }
 
@@ -278,14 +291,13 @@ text-align:center ;
 #card h2 {
   color: #fff;
 }
-#joy {
+.joy{
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; 
+  align-items: center; 
 }
 
-#joy img {
+.joy img {
   max-width: 100%;
   height: auto;
 }
@@ -436,6 +448,10 @@ footer {
   width: 20px;
   height: 20px;
  
+}
+.deal {
+  display: flex;
+  flex-direction: row;
 }
 
 
